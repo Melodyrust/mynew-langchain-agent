@@ -1,0 +1,14 @@
+name: WeatherAgent
+description: 一个可以查询天气的智能助手
+input:
+  description: 需要查询天气的城市名称
+  type: string
+output:
+  description: 指定城市的天气信息
+  type: string
+tools:
+  - name: WeatherTool
+    parameters:
+      city:
+        description: 城市名称
+        type: string    
